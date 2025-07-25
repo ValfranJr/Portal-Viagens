@@ -1,0 +1,25 @@
+.header{
+    background-color: #1E90FF ;
+    color: #1C1C1C;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.header__title{
+    padding: 1rem;
+
+}
+
+.header__nav{
+    display: flex;
+    justify-content:right;
+    gap: 1.5rem;
+
+}
+
+.header__nav :hover{
+    color: #FF6B6B;
+
+}

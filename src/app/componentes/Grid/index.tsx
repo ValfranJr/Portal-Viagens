@@ -1,6 +1,6 @@
 import { Destino } from "@/app/typess/types";
 import Card from "../Card";
-
+import styles from "./Grid.module.css";
 
 type Props = {
   destinos: Destino[];
@@ -8,11 +8,11 @@ type Props = {
 
 const Grid = ({destinos}: Props) => {
   return (
-    <div>
-      {destinos.map((destino) => (
+    <section className={styles.grid}>
+      {destinos.map(destino => (
         <Card destinos={destino} key={destino.id} />
       ))}
-    </div>
+    </section>
   );
 };
 

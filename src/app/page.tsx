@@ -4,9 +4,9 @@ import { destinos } from "@/lib/destinos";
 
 export default function Home() {
   return (
-    <>
+    <div>
     <Grid destinos={destinos}/>
-    </>
+    </div>
 
   );
 }

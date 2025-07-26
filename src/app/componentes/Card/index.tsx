@@ -1,16 +1,17 @@
 import { Destino } from "@/app/typess/types";
 
-const Card = ({destinos}: Readonly<{destinos: Destino[]}>) => {
+type Props = {
+  destinos: Destino;
+};
+
+const Card = ({destinos}: Props) => {
+  const {id, nome, imagem, descricao} = destinos;
   return (
-    <>
-      {destinos.map((destino) => (
-        <div className="card">
-          <img src={destino.imagem} alt={destino.nome} />
-          <h3>{destino.nome}</h3>
-          <p>{destino.descricao}</p>
-        </div>
-      ))}
-    </>
+    <div key={id}>
+      <img src={imagem} alt={`Imagem do destino ${nome}`} />
+      <h3>{nome}</h3>
+      <p>{descricao}</p>
+    </div>
   );
 };
 

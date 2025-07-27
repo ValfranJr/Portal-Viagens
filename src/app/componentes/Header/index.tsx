@@ -9,9 +9,7 @@ const Header = () => {
       </Link>
       <nav className={styles.header__nav}>
         <Link href="/">Home</Link>
-        <Link href="/destinos/em-alta">Destinos em Alta</Link>
-        <Link href="/destinos/populares">Destinos Populares</Link>
-        <Link href="/destinos/top-viagens">Destinos Top Viagens</Link>
+        <Link href="/destinos/lista-de-destinos">Lista de Destinos</Link>
       </nav>
     </header>
   );
